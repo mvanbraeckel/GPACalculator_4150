@@ -13,6 +13,7 @@ import GPAcalculator.*;
 
 /**
  * Tests the conversion of percentage grades to letter values for each letter's low, midrange, and high values
+ * according to offical grading system at the University of Guelph (https://www.uoguelph.ca/registrar/calendars/undergraduate/2020-2021/c08/c08-grds.shtml)
  */
 public class TestConversions
 {
@@ -26,6 +27,10 @@ public class TestConversions
 
     // @Before public void setup() {
     //     this.gpaConverter = GPAconverterTool.getReference();
+    // }
+
+    // @Test public void test101percent__invalid__high() {
+    //     assertEquals(null, this.gpaConverter.getLetterForNumericGrade(101));
     // }
 
     // "Outstanding",		4.3f,	"A+",		90,	100	);
@@ -170,4 +175,8 @@ public class TestConversions
     @Test public void test000percent__F__low() {
         assertEquals("F", this.gpaConverter.getLetterForNumericGrade(0));
     }
+
+    // @Test public void testNegativeOnePercent__invalid__low() {
+    //     assertEquals(null, this.gpaConverter.getLetterForNumericGrade(-1));
+    // }
 }

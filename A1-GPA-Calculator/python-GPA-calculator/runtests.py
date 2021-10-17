@@ -11,8 +11,12 @@ import unittest
 
 #
 # Tests the conversion of percentage grades to letter values for each letter's low, midrange, and high values
+# according to offical grading system at the University of Guelph (https://www.uoguelph.ca/registrar/calendars/undergraduate/2020-2021/c08/c08-grds.shtml)
 #
 class TestPercentageGradeToLetterConversion(unittest.TestCase):
+
+    # def test__101percent__invalid__high(self):
+    #     self.assertEqual(gpa_calculator.gpa_converter.getLetterForNumericGrade(101), None)
 
     # "Outstanding",        4.3,    "A+",        90,    100    ))
     def test__100percent__A_plus__high(self):
@@ -143,6 +147,9 @@ class TestPercentageGradeToLetterConversion(unittest.TestCase):
 
     def test__000percent__F__low(self):
         self.assertEqual(gpa_calculator.gpa_converter.getLetterForNumericGrade(0), "F")
+
+    # def test__negative_one_percent__invalid__low(self):
+    #     self.assertEqual(gpa_calculator.gpa_converter.getLetterForNumericGrade(-1), None)
 
 
 if __name__ == '__main__':
