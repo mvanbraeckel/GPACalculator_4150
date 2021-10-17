@@ -16,7 +16,6 @@ Run the test suite using this command:
  - Date: October 17, 2021
  - Author: Mitchell Van Braeckel (1002297, mvanbrae@uoguelph.ca)
 
-
 ## Test Status
 
 This section lists each test in the suite, and its current status (PASS or FAIL)
