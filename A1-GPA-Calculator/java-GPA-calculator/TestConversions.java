@@ -28,10 +28,6 @@ public class TestConversions
     //     this.gpaConverter = GPAconverterTool.getReference();
     // }
 
-    // @Test public void test100percent() {
-    //     assertEquals(this.gpaConverter.getLetterForNumericGrade(100), "A+");
-    // }
-
     // "Outstanding",		4.3f,	"A+",		90,	100	);
     @Test public void test100percent__A_plus__high() {
         assertEquals("A+", this.gpaConverter.getLetterForNumericGrade(100));
