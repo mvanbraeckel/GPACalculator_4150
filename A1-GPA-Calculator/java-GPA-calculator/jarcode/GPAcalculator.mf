@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Specification-Title: Grade Point Average Calculator
+Specification-Version: 1.1
+Specification-Vendor: Grade Point Labs
+Implementation-Title: GPAcalculator
+Implementation-Version: build100
+Implementation-Vendor: Grade Point Labs
