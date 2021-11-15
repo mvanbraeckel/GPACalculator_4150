@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 """
-Course: Software Reliability and Testing (CIS*4150) - Assignment 1
-Date: October 17, 2021
+Course: Software Reliability and Testing (CIS*4150) - Assignment 2
+Date: November 15, 2021
 Author: Mitchell Van Braeckel (1002297, mvanbrae@uoguelph.ca)
 """
 
@@ -11,8 +11,9 @@ import unittest
 
 #
 # Tests the conversion of percentage grades to letter values for each letter's low, midrange, and high values
-# according to offical grading system at the University of Guelph (https://www.uoguelph.ca/registrar/calendars/undergraduate/2020-2021/c08/c08-grds.shtml)
+# according to official grading system at the University of Guelph (https://www.uoguelph.ca/registrar/calendars/undergraduate/2020-2021/c08/c08-grds.shtml)
 #
+
 class TestPercentageGradeToLetterConversion(unittest.TestCase):
 
     # def test__101percent__invalid__high(self):
@@ -151,6 +152,17 @@ class TestPercentageGradeToLetterConversion(unittest.TestCase):
     # def test__negative_one_percent__invalid__low(self):
     #     self.assertEqual(gpa_calculator.gpa_converter.getLetterForNumericGrade(-1), None)
 
+# #
+# # Tests the GPA calculation for one term with up to two courses (possible letter grades: "A", "B", "F")
+# #
+# class TestGPACalculations(unittest.TestCase):
+
+#     def setUp(self):
+#         gpa_calc = gpa_calculator.gpa_calculator("Mitchell Van Braeckel", 1002297)
+#         print(f"{gpa_calc.studentName}")
+
+#     def test__term_does_not_exist(self):
+#         self.assertEqual(gpa_calculator.gpa_converter.getLetterForNumericGrade(100), "A+")
 
 if __name__ == '__main__':
     unittest.main()
