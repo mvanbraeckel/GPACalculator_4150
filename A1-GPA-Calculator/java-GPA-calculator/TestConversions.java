@@ -20,14 +20,15 @@ public class TestConversions
     // Set up anything that you need prior to the tests in the @Before
     // declaration area
     static GPAconverterTool gpaConverter = null;
+    static GPAcalculator gpaCalculator = null;
 
     @BeforeClass public static void setUpClass() {
 		gpaConverter = GPAconverterTool.getReference();
 	}
 
-    // @Before public void setup() {
-    //     this.gpaConverter = GPAconverterTool.getReference();
-    // }
+    @Before public void setup() {
+        gpaCalculator = new GPAcalculator("Mitchell Van Braeckel", "1002297");
+    }
 
     // @Test public void test101percent__invalid__high() {
     //     assertEquals(null, this.gpaConverter.getLetterForNumericGrade(101));
@@ -176,7 +177,7 @@ public class TestConversions
         assertEquals("F", this.gpaConverter.getLetterForNumericGrade(0));
     }
 
-    // @Test public void testNegativeOnePercent__invalid__low() {
-    //     assertEquals(null, this.gpaConverter.getLetterForNumericGrade(-1));
-    // }
+    @Test public void testNegativeOnePercent__invalid__low() {
+        assertEquals(null, this.gpaConverter.getLetterForNumericGrade(-1));
+    }
 }

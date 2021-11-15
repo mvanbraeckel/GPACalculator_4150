@@ -18,6 +18,19 @@ public class RunTests
 				System.out.println(failure.toString());
 			}
 		}
+
+		/** overall gpaCalculationResult of this test run */
+		Result gpaCalculationResult = JUnitCore.runClasses(TestGPACalculations.class);
+
+		System.out.format("Overall GPA calculation result was : %s\n",
+				gpaCalculationResult.wasSuccessful() ? "SUCESS" : "FAILURE");
+
+		if ( ! gpaCalculationResult.wasSuccessful()) {
+			System.out.format("List of GPA calculation test failure messages:\n");
+			for (Failure failure : gpaCalculationResult.getFailures()) {
+				System.out.println(failure.toString());
+			}
+		}
 	}
-} 
+}
 
