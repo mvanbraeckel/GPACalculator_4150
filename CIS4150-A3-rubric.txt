@@ -1,0 +1,21 @@
+
+CIS*4150 A3 Rubric
+
+
+For each test question (bulleted list in objectives), the following
+will be assessed:
+
+## Design: 6 points
+
+- whether the design addresses the test objective
+- explanation of test case as per assignment design bullet list
+- explanation as to whether/how mocks are used
+
+## Implementation: 3 points
+
+- simplicity of design
+
+## Clarity: 1 points
+
+- clarity overall
+

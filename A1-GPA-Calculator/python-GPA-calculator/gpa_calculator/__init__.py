@@ -5,5 +5,6 @@
 #
 
 # make all components visible
-import gpa_calculator.gpa_calculator
+import gpa_calculator.gpa_calculation_mgr
 import gpa_calculator.gpa_converter
+import gpa_calculator.gpa_term_info

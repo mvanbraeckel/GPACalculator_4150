@@ -15,7 +15,7 @@ def getLetterForNumericGrade(percentageGrade):
 		return None
 
 	for gradeConversion in sGradeConversions():
-		if gradeConversion.lo < percentageGrade \
+		if gradeConversion.lo <= percentageGrade \
 				and percentageGrade <= gradeConversion.hi:
 			return gradeConversion.letter
 
